@@ -1,0 +1,23 @@
+.dashboard {
+	background-color: #f0f0f0;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.metric {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric h3 {
+	color: #333;
+}
+
+.metric p {
+	color: #666;
+}
