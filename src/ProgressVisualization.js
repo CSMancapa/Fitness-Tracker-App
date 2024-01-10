@@ -4,7 +4,7 @@ import './ProgressVisualization.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const ProgressVisualization = ({ progressData }) => {
-  console.log(progressData);
+  console.log('Progress Data', progressData);
 
   return (
     <div>
