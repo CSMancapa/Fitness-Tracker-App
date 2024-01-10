@@ -1,4 +1,6 @@
+// ProgressVisualization.js
 import React from 'react';
+import './ProgressVisualization.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const ProgressVisualization = ({ progressData }) => {
