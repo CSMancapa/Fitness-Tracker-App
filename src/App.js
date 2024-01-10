@@ -5,8 +5,8 @@ import Dashboard from './Dashboard';
 import AddExerciseType from './AddExerciseType';
 import { generateMockProgressData } from './MockData';
 import ProgressVisualization from './ProgressVisualization';
-import Header from './Header';
-import './App.css';
+import Header from './Header'; // Import the Header component
+import './App.css'; // Import the CSS file
 
 const App = () => {
   const [exerciseLog, setExerciseLog] = useState([]);
@@ -14,13 +14,14 @@ const App = () => {
   const [progressData, setProgressData] = useState(generateMockProgressData(exerciseLog));
 
   const addExercise = (exercise) => {
-  const updatedExerciseLog = [...exerciseLog, exercise];
-  setExerciseLog(updatedExerciseLog);
+    const updatedExerciseLog = [...exerciseLog, exercise];
+    setExerciseLog(updatedExerciseLog);
 
-  // Update progress data with new exercise
-  const updatedProgressData = generateMockProgressData(updatedExerciseLog);
-  setProgressData(updatedProgressData);
-};
+    // Update progress data with new exercise
+    const updatedProgressData = generateMockProgressData(updatedExerciseLog);
+    console.log(updatedProgressData); // Log progress data to console
+    setProgressData(updatedProgressData);
+  };
 
   const deleteExercise = (index) => {
     const updatedExerciseLog = [...exerciseLog];
@@ -29,6 +30,7 @@ const App = () => {
 
     // Update progress data after deleting exercise
     const updatedProgressData = generateMockProgressData(updatedExerciseLog);
+    console.log(updatedProgressData); // Log progress data to console
     setProgressData(updatedProgressData);
   };
 
@@ -38,7 +40,7 @@ const App = () => {
 
   return (
     <div className="App">
-    <Header />
+      <Header />
       <ExerciseLog
         exerciseLog={exerciseLog}
         addExercise={addExercise}
